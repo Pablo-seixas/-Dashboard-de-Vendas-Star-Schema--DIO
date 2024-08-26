@@ -1,8 +1,6 @@
--- Criação e seleção do banco de dados
 CREATE DATABASE IF NOT EXISTS ProjetoEdu;
 USE ProjetoEdu;
 
--- Criação das tabelas principais primeiro
 CREATE TABLE Departamento (
     Departamento_ID INT PRIMARY KEY,
     Nome_Departamento VARCHAR(100)
@@ -26,7 +24,6 @@ CREATE TABLE Aluno (
     Data_Nascimento DATE
 );
 
--- Criação da tabela de relacionamento (que referencia as tabelas principais)
 CREATE TABLE Professor (
     Professor_ID INT PRIMARY KEY,
     Nome VARCHAR(100),
